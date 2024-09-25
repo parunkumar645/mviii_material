@@ -5,6 +5,7 @@ It is used to structure content on the web and is composed of elements enclosed 
 A basic HTML document starts with `<!DOCTYPE html>` declaration, which defines the document type and version of HTML.
 Basic Structure of an HTML document:
 
+```HTMl
    <!DOCTYPE html>
    <html lang="en">
      <head>
@@ -16,68 +17,102 @@ Basic Structure of an HTML document:
        <h1>Hello, World!</h1>
      </body>
    </html>
+```
 
-2. # HTML Elements
+# 2. HTML Elements
 
-   HTML is made up of elements. An element is everything from the start tag to the end tag:
-   <tagname>Content</tagname>
-   Elements can contain:
-   Attributes: Extra information about an element (e.g., id, class, src, href).
-   Nested Elements: One element inside another.
+HTML is made up of elements. An element is everything from the start tag to the end tag:
+<tagname>Content</tagname>
+Elements can contain:
+Attributes: Extra information about an element (e.g., id, class, src, href).
+Nested Elements: One element inside another.
 
-3. # HTML Headings and Paragraphs
+# 3. HTML Headings and Paragraphs
 
-   Headings: Ranges from <h1> (largest) to <h6> (smallest).
-   Paragraphs: Represented using the <p> tag.
-   <h1>Main Heading</h1>
-   <h2>Sub Heading</h2>
-   <p>This is a paragraph.</p>
+```html
+Headings: Ranges from
+<h1>
+  (largest) to
+  <h6>
+    (smallest). Paragraphs: Represented using the
+    <p>tag.</p>
+    <h1>Main Heading</h1>
+    <h2>Sub Heading</h2>
+    <p>This is a paragraph.</p>
+  </h6>
+</h1>
+```
 
-4. # HTML Links
+# 4. HTML Links
 
-   Links are created using the <a> tag, where href specifies the destination URL.
-   <a href="https://www.google.com" target="_blank">Visit Google</a>
-   target="blank" opens the link in a new tab.
+```html
+Links are created using the
+<a>
+  tag, where href specifies the destination URL.
+  <a href="https://www.google.com" target="_blank">Visit Google</a>
+  target="blank" opens the link in a new tab.</a
+>
+```
 
-5. # HTML Lists
-   Two main types of lists:
-   Ordered List (<ol>): List items are numbered.
-   Unordered List (<ul>): List items use bullet points.
-   <ol>
-     <li>First item</li>
-     <li>Second item</li>
-   </ol>
+# 5. HTML Lists
 
-<ul>
-  <li>Apple</li>
-  <li>Banana</li>
-</ul>
+```html
+Two main types of lists: Ordered List (
+<ol>
+  ): List items are numbered. Unordered List (
+  <ul>
+    ): List items use bullet points.
+    <ol>
+      <li>First item</li>
+      <li>Second item</li>
+    </ol>
 
-6. # HTML Images
+    <ul>
+      <li>Apple</li>
+      <li>Banana</li>
+    </ul>
+  </ul>
+</ol>
+```
 
-   Images are added using the <img> tag.
-   Attributes include:
-   src: The path of the image.
-   alt: Alternative text if the image doesn't load.
-   <img src="image.jpg" alt="Description of image" width="500" height="300">
+# 6. HTML Images
 
-7. # HTML Tables
+```html
+Images are added using the <img /> tag. Attributes include: src: The path of the
+image. alt: Alternative text if the image doesn't load.
+<img src="image.jpg" alt="Description of image" width="500" height="300" />
+```
 
-   Tables are created using the <table> tag with rows (<tr>), table headers (<th>), and table data (<td>).
-   <table border="1">
-     <tr>
-       <th>Header 1</th>
-       <th>Header 2</th>
-     </tr>
-     <tr>
-       <td>Data 1</td>
-       <td>Data 2</td>
-     </tr>
-   </table>
+# 7. HTML Tables
 
-8. # HTML Forms
-   Forms are used to collect user input.
+```html
+Tables are created using the
+<table>
+  tag with rows (
+  <tr>
+    ), table headers (
+    <th>), and table data (</th>
+    <td>
+      ).
+      <table border="1">
+        <tr>
+          <th>Header 1</th>
+          <th>Header 2</th>
+        </tr>
+        <tr>
+          <td>Data 1</td>
+          <td>Data 2</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+```
 
+# 8. HTML Forms
+
+```html
+Forms are used to collect user input.
 Important elements inside a form:
 
 <input>: To take user input (text, radio, checkbox, etc.).
@@ -90,72 +125,103 @@ Important elements inside a form:
   <input type="text" id="name" name="name">
   <input type="submit" value="Submit">
 </form>
+```
 
-9. # HTML Semantic Elements
-   Semantic elements clearly describe their meaning:
+# 9. HTML Semantic Elements
 
-<header>, <nav>, <section>, <article>, <footer>, <aside>, etc.
-
+```html
+Semantic elements clearly describe their meaning:
 <header>
-  <h1>Website Title</h1>
+  ,
+  <nav>
+    ,
+    <section>
+      ,
+      <article>
+        ,
+        <footer>
+          ,
+          <aside>
+            , etc.
+
+            <header>
+              <h1>Website Title</h1>
+            </header>
+            <section>
+              <article>
+                <h2>Article Title</h2>
+                <p>This is some content.</p>
+              </article>
+            </section>
+            <footer>Contact info</footer>
+          </aside>
+        </footer>
+      </article>
+    </section>
+  </nav>
 </header>
-<section>
-  <article>
-    <h2>Article Title</h2>
-    <p>This is some content.</p>
-  </article>
-</section>
-<footer>Contact info</footer>
+```
 
-10. # HTML Forms Input Types
+# 10. HTML Forms Input Types
 
-    Forms can have various input types:
-    Text: <input type="text">
-    Password: <input type="password">
-    Email: <input type="email">
-    Radio buttons: <input type="radio">
-    Checkboxes: <input type="checkbox">
-    Submit button: <input type="submit">
+```html
+Forms can have various input types: Text: <input type="text" /> Password:
+<input type="password" /> Email: <input type="email" /> Radio buttons:
+<input type="radio" /> Checkboxes: <input type="checkbox" /> Submit button:
+<input type="submit" />
+```
 
-11. # HTML Attributes
+# 11. HTML Attributes
 
-    Attributes provide additional information about an element.
-    Common attributes:
-    id: Unique identifier.
-    class: Class name(s) for CSS styling.
-    href: For links.
-    src: For images.
-    style: Inline CSS styles.
+```html
+Attributes provide additional information about an element. Common attributes:
+id: Unique identifier. class: Class name(s) for CSS styling. href: For links.
+src: For images. style: Inline CSS styles.
+```
 
-12. # HTML Audio and Video
-    Audio: Embed audio files using <audio>.
+# 12. HTML Audio and Video
 
-Video: Embed video files using <video>.
-<audio controls>
+```html
+Audio: Embed audio files using
+<audio>
+  . Video: Embed video files using
+  <video>
+    .
 
-  <source src="audio.mp3" type="audio/mp3">
-  Your browser does not support the audio element.
+    <audio controls>
+      <source src="audio.mp3" type="audio/mp3" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <video controls>
+      <source src="video.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </video>
 </audio>
+```
 
-<video controls>
-  <source src="video.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+# 13. HTML Forms Validation
 
-13. # HTML Forms Validation
+```html
+Use the required attribute for mandatory fields. pattern attribute can be used
+for input validation (e.g., email or phone number format).
+```
 
-    Use the required attribute for mandatory fields.
-    pattern attribute can be used for input validation (e.g., email or phone number format).
+# 14. HTML5 New Features
 
-14. # HTML5 New Features
+```html
+Canvas: For drawing graphics on the fly using JavaScript Geolocation API: To
+locate a user's geographical position. Local Storage: Store data in the user's
+browser that persists even after the browser is closed.
+```
 
-    Canvas: For drawing graphics on the fly using JavaScript
-    Geolocation API: To locate a user's geographical position.
-    Local Storage: Store data in the user's browser that persists even after the browser is closed.
+# 15. Meta Tags
 
-15. # Meta Tags
-    Provide metadata about the HTML document.
-    Important tags:
-    <meta charset="UTF-8">: Defines the character encoding.
-    <meta name="description" content="Page description">: Describes the page for SEO.
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">: Responsive design.
+```html
+Provide metadata about the HTML document. Important tags:
+<meta charset="UTF-8" />: Defines the character encoding.
+<meta name="description" content="Page description" />: Describes the page for
+SEO. <meta name="viewport" content="width=device-width, initial-scale=1.0" />:
+Responsive design.
+```
